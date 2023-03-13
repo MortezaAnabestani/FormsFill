@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Buttons</title>
+    <style>
+        *{
+            direction: rtl;
+            font-family: irmitra;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>انتخاب وضعیت</h1>
+        <form>
+            <input type="radio" name="marriage" value="مجرد" /><label>مجرد</label>
+            <input type="radio" name="marriage" value="متاهل" checked/><label>متأهل</label>
+            <hr/>
+            <input type="radio" name="education" value="دیپلم" /><label>دیپلم</label>
+            <input type="radio" name="education" value="فوق دیپلم" /><label>فوق‌دیپلم</label>
+            <input type="radio" name="education" value="لیسانس" /><label>لیسانس</label>
+            <input type="radio" name="education" value="فوق لیسانس" /><label>فوق‌لیسانس</label>
+            <input type="radio" name="education" value="دکتری" checked/><label>دکتری</label>
+            <hr/>
+            <button type="button">مشاهدۀ وضعیت</button>
+        </form>
+        <h2>وضعیت فعلی شما</h2>
+        <div id="result" style="font-size: 20px;"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
